@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.ttf");
+    font-weight: 400;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+.fas {
+    color: black;
+}
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+  .login-page {
+    width: 400px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 400px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 54, 5, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 7px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+  }
+  .form button {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #0f6d2b;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #e63a23;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #e63a23;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+section {
+    margin: 0 auto;
+    padding: 0;
+}
+.first-screen {
+    height: 100vh;
+    clip-path: ellipse(100% 60% at 50% 35%);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.second-screen {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 21px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.section-bg {
+    background: url(../img/bg.svg);
+    color: #fff;
+}
+h1 {
+    font-family: Lora;
+    font-size: 80px;
+}
+.btn {
+    padding: 13px 20px;
+    color: #fff;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+.btn-bg {
+    background: #c74838;
+}
+
+.btn-outline {
+    border-color: #c74838;
+}
+.chevron {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-in-out;
+    animation: chevron-animation infinite 2s ease-in-out;
+}
+h2 {
+    font-family: Lora;
+    font-size: 48px;
+    margin: 60px, 60px, 60px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 2;
+    font-family: Montserrat;
+    
+}
+.projects {
+    margin: 90px 0;
+    align-self: center;
+}
+#projects{
+    display: flex;
+    padding-left: 10%;
+}
+.gallery {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+.img-wrapper {
+    width: 350px;
+    height: 290px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-wrapper img {
+  object-fit: cover;
+}
+.d-flex {
+    display: flex;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+.pr-4 {
+    padding-right: 4rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input,
+textarea {
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+.btn:hover {
+    background: #e63a23;
+}
+.chevron:hover {
+    transform: translate (-50%, 25px);
+}
+.img-wrapper:hover {
+    transform: scale(1.05);
+}
+@keyframes chevron-animation {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+.chevron:hover {
+    animation: none;
+}
+.chevron:hover {
+    animation-play-state: paused;
+}
+.chevron img {
+    transition: all 0.5s ease-in-out;
+}
+
+.chevron:hover img {
+    transform: translateY(25px);
+}
+
+.gallery_item{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
